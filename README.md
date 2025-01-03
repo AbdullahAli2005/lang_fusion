@@ -88,7 +88,3 @@ We welcome contributions to improve LangFusion. Feel free to submit issues or pu
 ## License
 LangFusion is open-source and available under the MIT License. See the LICENSE file for details.
 
----
-
-## Acknowledgments
-Special thanks to the open-source libraries and the Flutter community for making this project possible.
