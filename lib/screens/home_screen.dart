@@ -18,230 +18,254 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   List<String> languages = [
-  'Auto Detect',
-  'Afrikaans',
-  'Albanian',
-  'Amharic',
-  'Arabic',
-  'Armenian',
-  'Azerbaijani',
-  'Basque',
-  'Belarusian',
-  'Bengali',
-  'Bosnian',
-  'Bulgarian',
-  'Catalan',
-  'Cebuano',
-  'Chinese (Simplified)',
-  'Chinese (Traditional)',
-  'Corsican',
-  'Croatian',
-  'Czech',
-  'Danish',
-  'Dutch',
-  'English',
-  'Esperanto',
-  'Estonian',
-  'Finnish',
-  'French',
-  'Frisian',
-  'Galician',
-  'Georgian',
-  'German',
-  'Greek',
-  'Gujarati',
-  'Haitian Creole',
-  'Hausa',
-  'Hawaiian',
-  'Hebrew',
-  'Hindi',
-  'Hmong',
-  'Hungarian',
-  'Icelandic',
-  'Igbo',
-  'Indonesian',
-  'Irish',
-  'Italian',
-  'Japanese',
-  'Javanese',
-  'Kannada',
-  'Kazakh',
-  'Khmer',
-  'Kinyarwanda',
-  'Korean',
-  'Kurdish',
-  'Kyrgyz',
-  'Lao',
-  'Latin',
-  'Latvian',
-  'Lithuanian',
-  'Luxembourgish',
-  'Macedonian',
-  'Malagasy',
-  'Malay',
-  'Malayalam',
-  'Maltese',
-  'Maori',
-  'Marathi',
-  'Mongolian',
-  'Myanmar (Burmese)',
-  'Nepali',
-  'Norwegian',
-  'Nyanja (Chichewa)',
-  'Odia (Oriya)',
-  'Pashto',
-  'Persian',
-  'Polish',
-  'Portuguese',
-  'Punjabi',
-  'Romanian',
-  'Russian',
-  'Samoan',
-  'Scots Gaelic',
-  'Serbian',
-  'Sesotho',
-  'Shona',
-  'Sindhi',
-  'Sinhala (Sinhalese)',
-  'Slovak',
-  'Slovenian',
-  'Somali',
-  'Spanish',
-  'Sundanese',
-  'Swahili',
-  'Swedish',
-  'Tagalog (Filipino)',
-  'Tajik',
-  'Tamil',
-  'Tatar',
-  'Telugu',
-  'Thai',
-  'Turkish',
-  'Turkmen',
-  'Ukrainian',
-  'Urdu',
-  'Uyghur',
-  'Uzbek',
-  'Vietnamese',
-  'Welsh',
-  'Xhosa',
-  'Yiddish',
-  'Yoruba',
-  'Zulu'
-];
+    'Auto Detect',
+    'Afrikaans',
+    'Albanian',
+    'Amharic',
+    'Arabic',
+    'Armenian',
+    'Azerbaijani',
+    'Basque',
+    'Belarusian',
+    'Bengali',
+    'Bosnian',
+    'Bulgarian',
+    'Catalan',
+    'Cebuano',
+    'Chinese (Simplified)',
+    'Chinese (Traditional)',
+    'Corsican',
+    'Croatian',
+    'Czech',
+    'Danish',
+    'Dutch',
+    'English',
+    'Esperanto',
+    'Estonian',
+    'Finnish',
+    'French',
+    'Frisian',
+    'Galician',
+    'Georgian',
+    'German',
+    'Greek',
+    'Gujarati',
+    'Haitian Creole',
+    'Hausa',
+    'Hawaiian',
+    'Hebrew',
+    'Hindi',
+    'Hmong',
+    'Hungarian',
+    'Icelandic',
+    'Igbo',
+    'Indonesian',
+    'Irish',
+    'Italian',
+    'Japanese',
+    'Javanese',
+    'Kannada',
+    'Kazakh',
+    'Khmer',
+    'Kinyarwanda',
+    'Korean',
+    'Kurdish',
+    'Kyrgyz',
+    'Lao',
+    'Latin',
+    'Latvian',
+    'Lithuanian',
+    'Luxembourgish',
+    'Macedonian',
+    'Malagasy',
+    'Malay',
+    'Malayalam',
+    'Maltese',
+    'Maori',
+    'Marathi',
+    'Mongolian',
+    'Myanmar (Burmese)',
+    'Nepali',
+    'Norwegian',
+    'Nyanja (Chichewa)',
+    'Odia (Oriya)',
+    'Pashto',
+    'Persian',
+    'Polish',
+    'Portuguese',
+    'Punjabi',
+    'Romanian',
+    'Russian',
+    'Samoan',
+    'Scots Gaelic',
+    'Serbian',
+    'Sesotho',
+    'Shona',
+    'Sindhi',
+    'Sinhala (Sinhalese)',
+    'Slovak',
+    'Slovenian',
+    'Somali',
+    'Spanish',
+    'Sundanese',
+    'Swahili',
+    'Swedish',
+    'Tagalog (Filipino)',
+    'Tajik',
+    'Tamil',
+    'Tatar',
+    'Telugu',
+    'Thai',
+    'Turkish',
+    'Turkmen',
+    'Ukrainian',
+    'Urdu',
+    'Uyghur',
+    'Uzbek',
+    'Vietnamese',
+    'Welsh',
+    'Xhosa',
+    'Yiddish',
+    'Yoruba',
+    'Zulu'
+  ];
 
-List<String> languageCodes = [
-  'auto',
-  'af',
-  'sq',
-  'am',
-  'ar',
-  'hy',
-  'az',
-  'eu',
-  'be',
-  'bn',
-  'bs',
-  'bg',
-  'ca',
-  'ceb',
-  'zh-CN',
-  'zh-TW',
-  'co',
-  'hr',
-  'cs',
-  'da',
-  'nl',
-  'en',
-  'eo',
-  'et',
-  'fi',
-  'fr',
-  'fy',
-  'gl',
-  'ka',
-  'de',
-  'el',
-  'gu',
-  'ht',
-  'ha',
-  'haw',
-  'he',
-  'hi',
-  'hmn',
-  'hu',
-  'is',
-  'ig',
-  'id',
-  'ga',
-  'it',
-  'ja',
-  'jw',
-  'kn',
-  'kk',
-  'km',
-  'rw',
-  'ko',
-  'ku',
-  'ky',
-  'lo',
-  'la',
-  'lv',
-  'lt',
-  'lb',
-  'mk',
-  'mg',
-  'ms',
-  'ml',
-  'mt',
-  'mi',
-  'mr',
-  'mn',
-  'my',
-  'ne',
-  'no',
-  'ny',
-  'or',
-  'ps',
-  'fa',
-  'pl',
-  'pt',
-  'pa',
-  'ro',
-  'ru',
-  'sm',
-  'gd',
-  'sr',
-  'st',
-  'sn',
-  'sd',
-  'si',
-  'sk',
-  'sl',
-  'so',
-  'es',
-  'su',
-  'sw',
-  'sv',
-  'tl',
-  'tg',
-  'ta',
-  'tt',
-  'te',
-  'th',
-  'tr',
-  'tk',
-  'uk',
-  'ur',
-  'ug',
-  'uz',
-  'vi',
-  'cy',
-  'xh',
-  'yi',
-  'yo',
-  'zu'
-];
+  List<String> languageCodes = [
+    'auto',
+    'af',
+    'sq',
+    'am',
+    'ar',
+    'hy',
+    'az',
+    'eu',
+    'be',
+    'bn',
+    'bs',
+    'bg',
+    'ca',
+    'ceb',
+    'zh-CN',
+    'zh-TW',
+    'co',
+    'hr',
+    'cs',
+    'da',
+    'nl',
+    'en',
+    'eo',
+    'et',
+    'fi',
+    'fr',
+    'fy',
+    'gl',
+    'ka',
+    'de',
+    'el',
+    'gu',
+    'ht',
+    'ha',
+    'haw',
+    'he',
+    'hi',
+    'hmn',
+    'hu',
+    'is',
+    'ig',
+    'id',
+    'ga',
+    'it',
+    'ja',
+    'jw',
+    'kn',
+    'kk',
+    'km',
+    'rw',
+    'ko',
+    'ku',
+    'ky',
+    'lo',
+    'la',
+    'lv',
+    'lt',
+    'lb',
+    'mk',
+    'mg',
+    'ms',
+    'ml',
+    'mt',
+    'mi',
+    'mr',
+    'mn',
+    'my',
+    'ne',
+    'no',
+    'ny',
+    'or',
+    'ps',
+    'fa',
+    'pl',
+    'pt',
+    'pa',
+    'ro',
+    'ru',
+    'sm',
+    'gd',
+    'sr',
+    'st',
+    'sn',
+    'sd',
+    'si',
+    'sk',
+    'sl',
+    'so',
+    'es',
+    'su',
+    'sw',
+    'sv',
+    'tl',
+    'tg',
+    'ta',
+    'tt',
+    'te',
+    'th',
+    'tr',
+    'tk',
+    'uk',
+    'ur',
+    'ug',
+    'uz',
+    'vi',
+    'cy',
+    'xh',
+    'yi',
+    'yo',
+    'zu'
+  ];
+
+  void copyToClipboard(BuildContext context, String text) {
+    if (text.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('No translation available to copy!'),
+          duration: Duration(seconds: 2),
+          behavior: SnackBarBehavior.floating,
+          backgroundColor: Colors.red,
+        ),
+      );
+      return;
+    }
+
+    Clipboard.setData(ClipboardData(text: text)); // Copy the text to clipboard
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Copied to clipboard!'),
+        duration: Duration(seconds: 2),
+        behavior: SnackBarBehavior.floating,
+        backgroundColor: Colors.deepPurple,
+      ),
+    );
+  }
 
   final translator = GoogleTranslator();
   final FlutterTts flutterTts = FlutterTts();
@@ -392,198 +416,205 @@ List<String> languageCodes = [
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-  appBar: AppBar(
-    backgroundColor: Colors.deepPurple,
-    title: Row(
-      mainAxisSize: MainAxisSize.min, // Ensures the Row is as compact as possible
-      children: [
-        Image.asset(
-          'assets/app_bar2.png', // Path to your logo in assets
-          height: 55, // Adjust height to fit the AppBar
-        ),
-        const SizedBox(width: 10), // Spacing between logo and app name
-        const Text(
-          'LangFusion',
-          style: TextStyle(
-            color: Color.fromARGB(255, 212, 212, 212),
-            fontWeight: FontWeight.w700,
-            fontSize: 30,
-          ),
-        ),
-      ],
-    ),
-    elevation: 5,
-    centerTitle: true,
-  ),
-  body: Container(
-    height: double.infinity,
-    decoration: const BoxDecoration(
-      gradient: LinearGradient(
-        colors: [Colors.deepPurple, Colors.purple, Colors.pinkAccent],
-        begin: Alignment.topLeft,
-        end: Alignment.bottomRight,
-      ),
-    ),
-    child: SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Column(
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        title: Row(
+          mainAxisSize:
+              MainAxisSize.min, // Ensures the Row is as compact as possible
           children: [
-            // From Language Dropdown
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: dropdownWidget(
-                selectedvalue,
-                languages,
-                (value) {
-                  setState(() {
-                    selectedvalue = value!;
-                    from = languageCodes[languages.indexOf(value)];
-                  });
-                },
-              ),
+            Image.asset(
+              'assets/app_bar2.png', // Path to your logo in assets
+              height: 55, // Adjust height to fit the AppBar
             ),
-            const SizedBox(height: 5),
-
-            // Input Text Area
-            textInputWidget(),
-            const SizedBox(height: 10),
-
-            // OCR Button
-            ElevatedButton.icon(
-              onPressed: performOCR,
-              icon: const Icon(Icons.camera_alt, color: Colors.white),
-              label: const Text("Extract Text from Image", style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.w600
-              ),),
-              style: ElevatedButton.styleFrom(
-                elevation: 8,
-                padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                textStyle: const TextStyle(fontSize: 16),
-                backgroundColor:  const Color.fromARGB(255, 166, 49, 187),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20),
-                ),
+            const SizedBox(width: 10), // Spacing between logo and app name
+            const Text(
+              'LangFusion',
+              style: TextStyle(
+                color: Color.fromARGB(255, 212, 212, 212),
+                fontWeight: FontWeight.w700,
+                fontSize: 30,
               ),
-            ),
-            const SizedBox(height: 20),
-
-            // To Language Dropdown
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: dropdownWidget(
-                selectedvalue2,
-                languages,
-                (value) {
-                  setState(() {
-                    selectedvalue2 = value!;
-                    to = languageCodes[languages.indexOf(value)];
-                  });
-                },
-              ),
-            ),
-            const SizedBox(height: 20),
-
-            // Translation Output
-            Card(
-              elevation: 8,
-              color: Colors.purple.shade50,
-              child: Padding(
-                padding: const EdgeInsets.only(top: 20, right: 20, left: 15, bottom: 10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Text(
-                      "Translation Output:",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 16,
-                        color: Colors.deepPurple,
-                      ),
-                    ),
-                    const SizedBox(height: 10),
-                    SelectableText(
-                      data.isEmpty ? "Translation will appear here" : data,
-                      style: const TextStyle(
-                        fontSize: 19,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
-                      children: [
-                        IconButton(
-                          icon: const Icon(Icons.copy, color: Colors.deepPurple),
-                          onPressed: () {
-                            // Copy functionality
-                          },
-                        ),
-                        IconButton(
-                          icon: const Icon(Icons.share, color: Colors.pink),
-                          onPressed: shareTranslation,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            const SizedBox(height: 20),
-
-            // Translate & Speak Buttons
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                ElevatedButton(
-                  onPressed: isLoading ? null : translate,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
-                    minimumSize: const Size(140, 45),
-                  ),
-                  child: isLoading
-                      ? const CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                        )
-                      : const Text(
-                          'Translate',
-                          style: TextStyle(color: Colors.white),
-                        ),
-                ),
-                ElevatedButton(
-                  onPressed: data.isEmpty ? null : speak,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.deepPurple,
-                    minimumSize: const Size(140, 45),
-                  ),
-                  child: const Text(
-                    'Speak',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              ],
             ),
           ],
         ),
+        elevation: 5,
+        centerTitle: true,
       ),
-    ),
-  ),
-  floatingActionButton: FloatingActionButton(
-    backgroundColor: Colors.deepPurple,
-    onPressed: () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => const HistoryPage()),
-      );
-    },
-    child: const Icon(
-      Icons.history,
-      color: Colors.white,
-    ),
-  ),
-);
+      body: Container(
+        height: double.infinity,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.deepPurple, Colors.purple, Colors.pinkAccent],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Column(
+              children: [
+                // From Language Dropdown
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  child: dropdownWidget(
+                    selectedvalue,
+                    languages,
+                    (value) {
+                      setState(() {
+                        selectedvalue = value!;
+                        from = languageCodes[languages.indexOf(value)];
+                      });
+                    },
+                  ),
+                ),
+                const SizedBox(height: 5),
 
+                // Input Text Area
+                textInputWidget(),
+                const SizedBox(height: 10),
+
+                // OCR Button
+                ElevatedButton.icon(
+                  onPressed: performOCR,
+                  icon: const Icon(Icons.camera_alt, color: Colors.white),
+                  label: const Text(
+                    "Extract Text from Image",
+                    style: TextStyle(
+                        color: Colors.white, fontWeight: FontWeight.w600),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    elevation: 8,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 12),
+                    textStyle: const TextStyle(fontSize: 16),
+                    backgroundColor: const Color.fromARGB(255, 166, 49, 187),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+
+                // To Language Dropdown
+                Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                  child: dropdownWidget(
+                    selectedvalue2,
+                    languages,
+                    (value) {
+                      setState(() {
+                        selectedvalue2 = value!;
+                        to = languageCodes[languages.indexOf(value)];
+                      });
+                    },
+                  ),
+                ),
+                const SizedBox(height: 20),
+
+                // Translation Output
+                Card(
+                  elevation: 8,
+                  color: Colors.purple.shade50,
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                        top: 20, right: 20, left: 15, bottom: 10),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "Translation Output:",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            fontSize: 16,
+                            color: Colors.deepPurple,
+                          ),
+                        ),
+                        const SizedBox(height: 10),
+                        SelectableText(
+                          data.isEmpty ? "Translation will appear here" : data,
+                          style: const TextStyle(
+                            fontSize: 19,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.black,
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            IconButton(
+                              icon: const Icon(Icons.copy,
+                                  color: Colors.deepPurple),
+                              onPressed: () {
+                                copyToClipboard(context,
+                                    data); // Use data as the text to copy
+                              },
+                            ),
+                            IconButton(
+                              icon: const Icon(Icons.share, color: Colors.pink),
+                              onPressed: shareTranslation,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                // Translate & Speak Buttons
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    ElevatedButton(
+                      onPressed: isLoading ? null : translate,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurple,
+                        minimumSize: const Size(140, 45),
+                      ),
+                      child: isLoading
+                          ? const CircularProgressIndicator(
+                              valueColor:
+                                  AlwaysStoppedAnimation<Color>(Colors.white),
+                            )
+                          : const Text(
+                              'Translate',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                    ),
+                    ElevatedButton(
+                      onPressed: data.isEmpty ? null : speak,
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurple,
+                        minimumSize: const Size(140, 45),
+                      ),
+                      child: const Text(
+                        'Speak',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.deepPurple,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const HistoryPage()),
+          );
+        },
+        child: const Icon(
+          Icons.history,
+          color: Colors.white,
+        ),
+      ),
+    );
   }
 
   Widget dropdownWidget(String selectedValue, List<String> items,
